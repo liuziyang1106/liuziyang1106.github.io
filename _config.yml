@@ -1,1 +1,23 @@
-theme: jekyll-theme-modernist
+# Site settings
+title: Louis's blog
+email: marc4869@163.com
+description: "Vision and Insight"
+baseurl: ""
+url: "http://zhangliyuan97.github.io"
+github_username:  zhangliyuan97
+
+cdn:
+    jsdelivr:
+        enabled: true
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+highlighter: rouge
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
+  
+mathjax: true
