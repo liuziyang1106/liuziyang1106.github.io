@@ -1,10 +1,10 @@
 # Site settings
-title: Louis's blog
-email: marc4869@163.com
+title: Ziyang's blog
+email: liuziyang1106@buaa.edu.cn
 description: "Vision and Insight"
 baseurl: ""
-url: "http://zhangliyuan97.github.io"
-github_username:  zhangliyuan97
+url: "http://liuziyang1106.github.io"
+github_username:  liuziyang1106
 
 cdn:
     jsdelivr:
