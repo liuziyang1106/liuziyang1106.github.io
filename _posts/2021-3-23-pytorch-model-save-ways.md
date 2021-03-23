@@ -105,3 +105,89 @@ module.backbone.body.stem.conv1.weight
 
 ##### （2）net['optimizer']
 
+```python
+# print(net["optimizer"]) # 返回的是一个一般的字典 Dict 对象
+for key,value in net["optimizer"].items():
+	print(key,type(value),sep=" ")
+'''运行结果为 '''
+state <class 'dict'>
+param_groups <class 'list'>
+
+'''
+发现这个这个字典只有两个key，一个是state，一个是param_groups
+其中state所对应的值又是一个字典类型，
+param_groups对应的值是一个列表
+'''
+```
+
+先看一下**net["optimizer"] ['param_groups'] **这个列表里面放了一下啥：
+
+```python
+groups=net["optimizer"]["param_groups"]
+print(groups)
+print(len(groups)) # 返回115.即在这个模型中，共有115组
+
+'''
+[{'lr': 5.000000000000001e-05, 'weight_decay': 0.0005, 'momentum': 0.9, 'dampening': 0, 'nesterov': False, 'initial_lr': 0.005, 'params': [140566644061240]},
+{'lr': 5.000000000000001e-05, 'weight_decay': 0.0005, 'momentum': 0.9, 'dampening': 0, 'nesterov': False, 'initial_lr': 0.005, 'params': [140566644061960]},
+{'lr': 5.000000000000001e-05, 'weight_decay': 0.0005, 'momentum': 0.9, 'dampening': 0, 'nesterov': False, 'initial_lr': 0.005, 'params': [140566644062248]},
+{'lr': 5.000000000000001e-05, 'weight_decay': 0.0005, 'momentum': 0.9, 'dampening': 0, 'nesterov': False, 'initial_lr': 0.005, 'params': [140566644077336]},
+.
+.
+.
+{'lr': 5.000000000000001e-05, 'weight_decay': 0.0005, 'momentum': 0.9, 'dampening': 0, 'nesterov': False, 'initial_lr': 0.005, 'params': [140566644061960]},
+{'lr': 5.000000000000001e-05, 'weight_decay': 0.0005, 'momentum': 0.9, 'dampening': 0, 'nesterov': False, 'initial_lr': 0.005, 'params': [140566103171936]},
+{'lr': 5.000000000000001e-05, 'weight_decay': 0.0005, 'momentum': 0.9, 'dampening': 0, 'nesterov': False, 'initial_lr': 0.005, 'params': [140566103172008]}]
+这个列表的长度为115，每一个元素又是一个字典。
+'''
+```
+
+再看一下**net["optimizer"] ["states"] **这个字典里面放了啥：
+
+```python
+state=net["optimizer"]["state"]
+print(len(state)) # 返回115.即在这个模型中，state共有115组
+
+for key,value in state.items():
+	print(key,type(value),sep=" ")
+'''
+140566644061240 <class 'dict'>
+140566644061960 <class 'dict'>
+140566644062248 <class 'dict'>
+140566644077336 <class 'dict'>
+.
+.
+.
+140566103171936 <class 'dict'>
+140566103172008 <class 'dict'>
+
+这个字典的长度是115，而且和前面的param_groups有着对应关系，每一个元素的键值就是param_groups中每一个元素的params。
+'''
+```
+
+##### (3)  net ['scheduler']
+
+```python
+scheduler=net["scheduler"] # 返回的依然是一个字典
+print(len(scheduler)) # 字典的长度为 7
+print(scheduler)
+'''
+{'milestones': (70000, 90000),
+'gamma': 0.1,
+'warmup_factor': 0.3333333333333333,
+'warmup_iters': 500,
+'warmup_method': 'linear',
+'base_lrs': [0.005, 0.005, 0.005, 0.01, ......, 0.005, 0.005, 0.005, 0.005, 0.01],
+'last_epoch': 99999}
+继续看一下这个base_lrs的信息
+'''
+
+print(len(scheduler["base_lrs"])) # 返回115，→115个数组成的一个列表
+```
+
+##### (4) net['iteration']
+
+```
+print(net["iteration"]) # 返回 9999 ，它是一个具体的数字
+```
+
