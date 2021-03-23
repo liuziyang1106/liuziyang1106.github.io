@@ -55,8 +55,53 @@ model = torch.load(mymodel.pth)
 model.eval()
 ```
 
-
-
-### 四、Example
-
 ## PyTorch中保存的模型文件.pth深入解析
+
+探究一下，我们通常保存的模型文件 **.pth** 文件内部是什么？
+
+### 一、 .pth 文件详解
+
+如上文所述，在pytorch进行模型保存的时候，一般有两种保存方式，一种是保存这个模型，另一种是只保存模型的参数。保存的模型参数实际上是一个字典类型，通过key-value的形式来存储模型的所有参数。
+
+#### 1.1 .pth 文件基本信息查看。
+
+```python
+import torch
+pthfile = '/home/workspace/baseline_ckpt.pth'
+net = torch.load(pthfile)
+
+print(type(net)) # 类型是dict
+print(len(net))  # 长度是4， 即存在4个key-value键值对
+
+for k in net.keys():
+	print(k)     # 查看四个键，分别是 model, optimizer, scheduler, iteraion
+```
+
+#### 1.2 模型的四个键值详解
+
+##### （1） net['model']
+
+```python
+print(net['model'])  # 返回一个OrderedDict对象
+for key, value in net['model'].items():
+	print(key, values.size(), sep='')
+'''  运行结果 '''
+module.backbone.body.stem.conv1.weight torch.Size([64, 3, 7, 7])
+module.backbone.body.stem.bn1.weight torch.Size([64])
+module.backbone.body.stem.bn1.bias torch.Size([64])
+module.backbone.body.stem.bn1.running_mean torch.Size([64])
+module.backbone.body.stem.bn1.running_var torch.Size([64])
+module.backbone.body.layer1.0.downsample.0.weight torch.Size([256, 64, 1, 1])
+module.backbone.body.layer1.0.downsample.1.weight torch.Size([256])
+.....
+```
+
+**总结**：键model 所对应的是值是一个OrderedDict，而这个OrderedDict字典里边又存储着所有的每一层的参数名称以及对应的参数值。
+
+**需要注意的是，**这里参数名称之所以很长，如：
+
+module.backbone.body.stem.conv1.weight
+是因为搭建网络结构的时候采用了**组件式的设计**，即整个模型里面构造了一个backbone的容器组件，backbone里面又构造了一个body容器组件，body里面又构造了一个stem容器，stem里面的第一个卷积层的权重。
+
+##### （2）net['optimizer']
+
