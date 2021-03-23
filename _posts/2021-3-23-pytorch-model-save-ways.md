@@ -7,7 +7,7 @@ categories: work
 date: 2021-03-23 14:00:00
 ---
 
-## PyTorch 模型保存方式（.pt, .pth, .pkl, .p）
+## **PyTorch 模型保存方式（.pt, .pth, .pkl, .p）**
 
   最近在投稿论文，准备release code的时候，发现自己的pre-trained model 文件异常的大，竟然有2.5G，就觉得不对劲，要研究一下是不是由于模型保存的时候有什么问题造成的。
 
@@ -55,7 +55,7 @@ model = torch.load(mymodel.pth)
 model.eval()
 ```
 
-## PyTorch中保存的模型文件.pth深入解析
+## **PyTorch中保存的模型文件.pth深入解析**
 
 探究一下，我们通常保存的模型文件 **.pth** 文件内部是什么？
 
@@ -193,7 +193,7 @@ print(net["iteration"]) # 返回 9999 ，它是一个具体的数字
 
 
 
-## 模型参数量与保存文件体积对应关系(估值)
+## **模型参数量与保存文件体积对应关系(估值)**
 
 |       Model        | num_parameter | file_size |
 | :----------------: | :-----------: | :-------: |
