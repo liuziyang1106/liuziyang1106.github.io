@@ -22,6 +22,8 @@ date: 2021-03-24 14:00:00
 
 为了从中挑选出最佳GPU，我们会从定价、性能两个维度对它们进行分析。[原文链接][https://lambdalabs.com/blog/best-gpu-tensorflow-2080-ti-vs-v100-vs-titan-v-vs-1080-ti-benchmark/]
 
+[原文链接]: https://lambdalabs.com/blog/best-gpu-tensorflow-2080-ti-vs-v100-vs-titan-v-vs-1080-ti-benchmark/
+
 #### **实验结果**
 
 根据全面定性定量的实验结果，截至2018年10月8日，NVIDIA RTX 2080 Ti是现在最好的深度学习GPU（用单个GPU运行Tensoflow）。以单GPU系统的性能为例，对比其他GPU，它的优劣分别是：
