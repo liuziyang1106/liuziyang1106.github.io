@@ -7,7 +7,7 @@ categories: work
 date: 2021-03-24 14:00:00
 ---
 
-![GPU top](liuziyang1106.github.io/_images/GPU_top.png)
+![GPU top](/liuziyang1106.github.io/_images/GPU_top.png)
 
 在深度学习实践中，很多人会经常问一个问题：什么是最好的深度学习GPU？在这篇文章中，我们将主要分析以下几款目前最优秀的GPU：
 
