@@ -10,8 +10,8 @@ date: 2021-03-24 14:00:00
 ![GPU top](/_images/2021-03-24-GPU-top.png)
 
 <div class="imgcap">
-<img src="/_imagews/2021-03-24-GPU-top.png">
-<div class="thecap">图1</div>
+<img src="/_images/2021-03-24-GPU-top.png">
+<div class="thecap"></div>
 </div>
 
 在深度学习实践中，很多人会经常问一个问题：什么是最好的深度学习GPU？在这篇文章中，我们将主要分析以下几款目前最优秀的GPU：
@@ -42,8 +42,8 @@ date: 2021-03-24 14:00:00
 ![吞吐量](/_images/2021-03-24-GPU-1.png)
 
 <div class="imgcap">
-<img src="/_imagews/2021-03-24-GPU-1.png">
-<div class="thecap">图1</div>
+<img src="/_images/2021-03-24-GPU-1.png">
+<div class="thecap"></div>
 </div>
 
 对上图数据计算平均值，同时按不同浮点计算能力进行分类，我们可以得到：
