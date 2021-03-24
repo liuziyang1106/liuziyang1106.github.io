@@ -9,7 +9,7 @@ date: 2021-03-24 14:00:00
 
 <div class="imgcap">
 <img src="/_images/2021-03-24-GPU-top.png">
-<div class="thecap"></div>
+<div class="thecap">top</div>
 </div>
 
 在深度学习实践中，很多人会经常问一个问题：什么是最好的深度学习GPU？在这篇文章中，我们将主要分析以下几款目前最优秀的GPU：
@@ -41,26 +41,26 @@ date: 2021-03-24 14:00:00
 
 <div class="imgcap">
 <img src="/_images/2021-03-24-GPU-1.png">
-<div class="thecap"></div>
+<div class="thecap">f1</div>
 </div>
 
 对上图数据计算平均值，同时按不同浮点计算能力进行分类，我们可以得到：
 
 <div class="imgcap">
 <img src="/_images/2021-03-24-GPU-2.png">
-<div class="thecap"></div>
+<div class="thecap">f2</div>
 </div>
 
 <div class="imgcap">
 <img src="/_images/2021-03-24-GPU-3.png">
-<div class="thecap"></div>
+<div class="thecap">f3</div>
 </div>
 
 可以发现，2080的模型训练用时和1080 Ti基本持平，但2080 Ti有显著提升。而Titan V和Tesla V100由于是专为深度学习设计的GPU，它们的性能自然会比桌面级产品高出不少。最后，我们再将每个GPU的平均加速情况除以各自总成本：
 
 <div class="imgcap">
 <img src="/_images/2021-03-24-GPU-4.png">
-<div class="thecap"></div>
+<div class="thecap">f4</div>
 </div>
 
 #### **2080 Ti vs V100：2080 Ti真的那么快吗？**
@@ -84,14 +84,14 @@ V100有点像布加迪威龙，它是世界上最快的、能在公路上合法�
 
 <div class="imgcap">
 <img src="/_images/2021-03-24-GPU-5.png">
-<div class="thecap"></div>
+<div class="thecap">f5</div>
 </div>
 
 **价格表现数据（加速/$1,000）FP16**
 
 <div class="imgcap">
 <img src="/_images/2021-03-24-GPU-6.png">
-<div class="thecap"></div>
+<div class="thecap">f6</div>
 </div>
 
 #### 实验方法
