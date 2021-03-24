@@ -7,8 +7,6 @@ categories: work
 date: 2021-03-24 14:00:00
 ---
 
-![GPU top](/_images/2021-03-24-GPU-top.png)
-
 <div class="imgcap">
 <img src="/_images/2021-03-24-GPU-top.png">
 <div class="thecap"></div>
@@ -39,8 +37,6 @@ date: 2021-03-24 14:00:00
 
 实验中，所有GPU的性能都是通过在合成数据上训练常规模型，测量FP32和FP16时的吞吐量（每秒处理的训练样本数）来进行评估的。为了标准化数据，同时体现其他GPU相对于1080 Ti的提升情况，实验以1080 Ti的吞吐量为基数，将其他GPU吞吐量除以基数计算加速比，这个数据是衡量两个系统间相对性能的指标。
 
-![吞吐量](/_images/2021-03-24-GPU-1.png)
-
 <div class="imgcap">
 <img src="/_images/2021-03-24-GPU-1.png">
 <div class="thecap"></div>
@@ -48,13 +44,22 @@ date: 2021-03-24 14:00:00
 
 对上图数据计算平均值，同时按不同浮点计算能力进行分类，我们可以得到：
 
-![加速比](/_images/2021-03-24-GPU-2.png)
+<div class="imgcap">
+<img src="/_images/2021-03-24-GPU-2.png">
+<div class="thecap"></div>
+</div>
 
-![加速比](/_images/2021-03-24-GPU-3.png)
+<div class="imgcap">
+<img src="/_images/2021-03-24-GPU-3.png">
+<div class="thecap"></div>
+</div>
 
 可以发现，2080的模型训练用时和1080 Ti基本持平，但2080 Ti有显著提升。而Titan V和Tesla V100由于是专为深度学习设计的GPU，它们的性能自然会比桌面级产品高出不少。最后，我们再将每个GPU的平均加速情况除以各自总成本：
 
-![加速比](/_images/2021-03-24-GPU-4.png)
+<div class="imgcap">
+<img src="/_images/2021-03-24-GPU-4.png">
+<div class="thecap"></div>
+</div>
 
 #### **2080 Ti vs V100：2080 Ti真的那么快吗？**
 
@@ -75,13 +80,17 @@ V100有点像布加迪威龙，它是世界上最快的、能在公路上合法�
 
 **价格表现数据（加速/$1,000）FP32**
 
-![加速比](/_images/2021-03-24-GPU-5.png)
+<div class="imgcap">
+<img src="/_images/2021-03-24-GPU-5.png">
+<div class="thecap"></div>
+</div>
 
 **价格表现数据（加速/$1,000）FP16**
 
-![加速比](/_images/2021-03-24-GPU-6.png)
-
-
+<div class="imgcap">
+<img src="/_images/2021-03-24-GPU-6.png">
+<div class="thecap"></div>
+</div>
 
 #### 实验方法
 
