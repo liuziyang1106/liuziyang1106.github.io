@@ -7,7 +7,7 @@ categories: work
 date: 2021-03-24 14:00:00
 ---
 
-![GPU top](/liuziyang1106.github.io/_images/GPU-top.png)
+![GPU top](/_images/GPU-top.png)
 
 <div class="imgcap">
 <img src="/_images/GPU-top.png">
