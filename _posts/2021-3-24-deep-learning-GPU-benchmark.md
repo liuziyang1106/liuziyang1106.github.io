@@ -9,7 +9,7 @@ date: 2021-03-24 14:00:00
 
 <div class="imgcap">
 <img src="/assets/2021-03-24-GPU-top.png">
-<div class="thecap">top</div>
+<div class="thecap"></div>
 </div>
 
 
@@ -42,7 +42,7 @@ date: 2021-03-24 14:00:00
 
 <div class="imgcap">
 <img src="/assets/2021-03-24-GPU-1.png">
-<div class="thecap">f1</div>
+<div class="thecap">Throughput of each GPU on various models</div>
 </div>
 
 
@@ -50,12 +50,12 @@ date: 2021-03-24 14:00:00
 
 <div class="imgcap">
 <img src="/assets/2021-03-24-GPU-2.png">
-<div class="thecap">f2</div>
+<div class="thecap">FP32 average speedup vs 1080 ti.</div>
 </div>
 
 <div class="imgcap">
 <img src="/assets/2021-03-24-GPU-3.png">
-<div class="thecap">f3</div>
+<div class="thecap">FP16 average speedup vs 1080 ti</div>
 </div>
 
 
@@ -63,9 +63,13 @@ date: 2021-03-24 14:00:00
 
 <div class="imgcap">
 <img src="/assets/2021-03-24-GPU-4.png">
-<div class="thecap">f4</div>
+<div class="thecap">FP32 performance per $. Units are speedup / k$.</div>
 </div>
 
+<div class="imgcap">
+<img src="/assets/2021-03-24-GPU-7.png">
+<div class="thecap">FP16 performance per $. Units are speedup / k$.</div>
+</div>
 
 #### **2080 Ti vs V100：2080 Ti真的那么快吗？**
 
@@ -88,7 +92,7 @@ V100有点像布加迪威龙，它是世界上最快的、能在公路上合法�
 
 <div class="imgcap">
 <img src="/assets/2021-03-24-GPU-5.png">
-<div class="thecap">f5</div>
+<div class="thecap"></div>
 </div>
 
 
@@ -96,8 +100,9 @@ V100有点像布加迪威龙，它是世界上最快的、能在公路上合法�
 
 <div class="imgcap">
 <img src="/assets/2021-03-24-GPU-6.png">
-<div class="thecap">f6</div>
+<div class="thecap"></div>
 </div>
+
 
 #### 实验方法
 
