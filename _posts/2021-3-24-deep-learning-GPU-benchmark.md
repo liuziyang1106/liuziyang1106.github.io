@@ -21,7 +21,7 @@ date: 2021-03-24 14:00:00
 - Titan V
 - Tesla V100
 
-为了从中挑选出最佳GPU，我们会从定价、性能两个维度对它们进行分析。[原文链接][https://lambdalabs.com/blog/best-gpu-tensorflow-2080-ti-vs-v100-vs-titan-v-vs-1080-ti-benchmark/]
+为了从中挑选出最佳GPU，我们会从定价、性能两个维度对它们进行分析。[原文链接](https://lambdalabs.com/blog/best-gpu-tensorflow-2080-ti-vs-v100-vs-titan-v-vs-1080-ti-benchmark/)
 
 #### **实验结果**
 
