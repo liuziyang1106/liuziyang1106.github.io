@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: 使用commitizen规范Git 提交说明
-excerpt: 使用commitizen规范Git 提交说明
+excerpt: 规范Git commit 人人有责
 categories: work
 date: 2021-04-14 12:00:00
 ---
