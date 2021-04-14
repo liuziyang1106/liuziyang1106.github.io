@@ -2,12 +2,10 @@
 layout: post
 comments: true
 title: 使用commitizen规范Git 提交说明
-excerpt: 
+excerpt: 使用commitizen规范Git 提交说明
 categories: work
 date: 2021-04-14 12:00:00
 ---
-
-
 
 ## Commit Message 的标准格式
 
