@@ -109,9 +109,9 @@ Sklearn provide several cross-validation approach in [Model Selection section](A
 
 [2] G. C. Cawley and N. L. C. Talbot, “On Over-fitting in Model Selection and Subsequent Selection Bias in Performance Evaluation,” Journal of Machine Learning Research, vol. 11, no. Jul, pp. 2079–2107, 2010.
 
-[3] [5 Reasons why you should use Cross-Validation in your Data Science Projects | by Dima Shulga | Towards Data Science](https://towardsdatascience.com/5-reasons-why-you-should-use-cross-validation-in-your-data-science-project-8163311a1e79)
+[3] [5 Reasons why you should use Cross-Validation in your Data Science Projects](https://towardsdatascience.com/5-reasons-why-you-should-use-cross-validation-in-your-data-science-project-8163311a1e79)
 
-[4] [Cross-Validation in Machine Learning | by Prashant Gupta | Towards Data Science](https://towardsdatascience.com/cross-validation-in-machine-learning-72924a69872f)
+[4] [Cross-Validation in Machine Learning](https://towardsdatascience.com/cross-validation-in-machine-learning-72924a69872f)
 
 [5] [A Gentle Introduction to k-fold Cross-Validation (machinelearningmastery.com)](https://machinelearningmastery.com/k-fold-cross-validation/)
 
