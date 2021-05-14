@@ -65,3 +65,37 @@ The nested CV has an inner loop CV nested in an outer CV. The inner loop is resp
 However, Nested Cross validation will a large computation cost. For example, if we use 5-Folds cross validation for both outer and inner loop, the entire validation process need to 5*5 round to finish,  which is time and computation cost. Thus, for simplify, we can use Single-loop Cross validation. 
 
 **The Single-Loop Cross-validation only has an outer CV, but in each round of outer CV, we perform simple data split to get train data and validation instead of inner cross validation.** The train set were used to trained the model and hyper-parameter tuning were performed on validation. After model training and tunning, the final performance is evaluated on the test set.
+
+## Sklearn API for Cross-Validation
+
+Sklearn provide several cross-validation approach in [Model Selection section](API Reference — scikit-learn 0.19.1 documentation (sklearn.org)]https://sklearn.org/modules/classes.html#module-sklearn.model_selection)
+
+### Splitter Classes
+
+| Strategies                                                   | Description                                          |
+| :----------------------------------------------------------- | ---------------------------------------------------- |
+| [`model_selection.GroupKFold`](https://sklearn.org/modules/generated/sklearn.model_selection.GroupKFold.html#sklearn.model_selection.GroupKFold)([n_splits]) | K-fold iterator variant with non-overlapping groups. |
+| [`model_selection.GroupShuffleSplit`](https://sklearn.org/modules/generated/sklearn.model_selection.GroupShuffleSplit.html#sklearn.model_selection.GroupShuffleSplit)([…]) | Shuffle-Group(s)-Out cross-validation iterator       |
+| [`model_selection.KFold`](https://sklearn.org/modules/generated/sklearn.model_selection.KFold.html#sklearn.model_selection.KFold)([n_splits, shuffle, …]) | K-Folds cross-validator                              |
+| [`model_selection.LeaveOneGroupOut`](https://sklearn.org/modules/generated/sklearn.model_selection.LeaveOneGroupOut.html#sklearn.model_selection.LeaveOneGroupOut)() | Leave One Group Out cross-validator                  |
+| [`model_selection.LeavePGroupsOut`](https://sklearn.org/modules/generated/sklearn.model_selection.LeavePGroupsOut.html#sklearn.model_selection.LeavePGroupsOut)(n_groups) | Leave P Group(s) Out cross-validator                 |
+| [`model_selection.LeaveOneOut`](https://sklearn.org/modules/generated/sklearn.model_selection.LeaveOneOut.html#sklearn.model_selection.LeaveOneOut)() | Leave-One-Out cross-validator                        |
+| [`model_selection.LeavePOut`](https://sklearn.org/modules/generated/sklearn.model_selection.LeavePOut.html#sklearn.model_selection.LeavePOut)(p) | Leave-P-Out cross-validator                          |
+| [`model_selection.PredefinedSplit`](https://sklearn.org/modules/generated/sklearn.model_selection.PredefinedSplit.html#sklearn.model_selection.PredefinedSplit)(test_fold) | Predefined split cross-validator                     |
+| [`model_selection.RepeatedKFold`](https://sklearn.org/modules/generated/sklearn.model_selection.RepeatedKFold.html#sklearn.model_selection.RepeatedKFold)([n_splits, …]) | Repeated K-Fold cross validator.                     |
+| [`model_selection.RepeatedStratifiedKFold`](https://sklearn.org/modules/generated/sklearn.model_selection.RepeatedStratifiedKFold.html#sklearn.model_selection.RepeatedStratifiedKFold)([…]) | Repeated Stratified K-Fold cross validator.          |
+| [`model_selection.ShuffleSplit`](https://sklearn.org/modules/generated/sklearn.model_selection.ShuffleSplit.html#sklearn.model_selection.ShuffleSplit)([n_splits, …]) | Random permutation cross-validator                   |
+| [`model_selection.StratifiedKFold`](https://sklearn.org/modules/generated/sklearn.model_selection.StratifiedKFold.html#sklearn.model_selection.StratifiedKFold)([n_splits, …]) | Stratified K-Folds cross-validator                   |
+| [`model_selection.StratifiedShuffleSplit`](https://sklearn.org/modules/generated/sklearn.model_selection.StratifiedShuffleSplit.html#sklearn.model_selection.StratifiedShuffleSplit)([…]) | Stratified ShuffleSplit cross-validator              |
+| [`model_selection.TimeSeriesSplit`](https://sklearn.org/modules/generated/sklearn.model_selection.TimeSeriesSplit.html#sklearn.model_selection.TimeSeriesSplit)([n_splits, …]) | Time Series cross-validator                          |
+
+### Hyper-parameter optimizers
+
+| Strategies                                                   | Description                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [`model_selection.GridSearchCV`](https://sklearn.org/modules/generated/sklearn.model_selection.GridSearchCV.html#sklearn.model_selection.GridSearchCV)(estimator, …) | Exhaustive search over specified parameter values for an estimator. |
+| [`model_selection.ParameterGrid`](https://sklearn.org/modules/generated/sklearn.model_selection.ParameterGrid.html#sklearn.model_selection.ParameterGrid)(param_grid) | Grid of parameters with a discrete number of values for each. |
+| [`model_selection.ParameterSampler`](https://sklearn.org/modules/generated/sklearn.model_selection.ParameterSampler.html#sklearn.model_selection.ParameterSampler)(…[, …]) | Generator on parameters sampled from given distributions.    |
+| [`model_selection.RandomizedSearchCV`](https://sklearn.org/modules/generated/sklearn.model_selection.RandomizedSearchCV.html#sklearn.model_selection.RandomizedSearchCV)(…[, …]) | Randomized search on hyper parameters.                       |
+| [`model_selection.fit_grid_point`](https://sklearn.org/modules/generated/sklearn.model_selection.fit_grid_point.html#sklearn.model_selection.fit_grid_point)(X, y, …[, …]) | Run fit on one set of parameters.                            |
+
