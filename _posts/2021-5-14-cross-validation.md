@@ -48,6 +48,7 @@ When doing one round CV to evaluate the performance of different models, and sel
 The nested CV has an inner loop CV nested in an outer CV. The inner loop is responsible for model selection/hyper-parameter tuning (similar to validation set), while the outer loop is for error estimation (test set).
 
 <div class="imgcap">
-<img src="/assets/2021-05-14-nested-croos-validation.png">
+<img src="/assets/2021-05-14-nested-cross-validation.png">
 <div class="thecap"></div>
 </div>
+
