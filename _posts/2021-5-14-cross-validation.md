@@ -99,3 +99,19 @@ Sklearn provide several cross-validation approach in [Model Selection section](A
 | [`model_selection.RandomizedSearchCV`](https://sklearn.org/modules/generated/sklearn.model_selection.RandomizedSearchCV.html#sklearn.model_selection.RandomizedSearchCV)(…[, …]) | Randomized search on hyper parameters.                       |
 | [`model_selection.fit_grid_point`](https://sklearn.org/modules/generated/sklearn.model_selection.fit_grid_point.html#sklearn.model_selection.fit_grid_point)(X, y, …[, …]) | Run fit on one set of parameters.                            |
 
+## Reference
+
+[1] T. Hastie, J. Friedman, and R. Tibshirani, “Model Assessment and Selection,” in The Elements of Statistical Learning: Data Mining, Inference, and Prediction, T. Hastie, J. Friedman, and R. Tibshirani, Eds. New York, NY: Springer New York, 2001, pp. 193–224.
+
+[2] G. C. Cawley and N. L. C. Talbot, “On Over-fitting in Model Selection and Subsequent Selection Bias in Performance Evaluation,” Journal of Machine Learning Research, vol. 11, no. Jul, pp. 2079–2107, 2010.
+
+[3] [5 Reasons why you should use Cross-Validation in your Data Science Projects | by Dima Shulga | Towards Data Science](https://towardsdatascience.com/5-reasons-why-you-should-use-cross-validation-in-your-data-science-project-8163311a1e79)
+
+[4] [Cross-Validation in Machine Learning | by Prashant Gupta | Towards Data Science](https://towardsdatascience.com/cross-validation-in-machine-learning-72924a69872f)
+
+[5] [A Gentle Introduction to k-fold Cross-Validation (machinelearningmastery.com)](https://machinelearningmastery.com/k-fold-cross-validation/)
+
+[6] [What is the purpose of performing cross-validation? (researchgate.net)](https://www.researchgate.net/post/What-is-the-purpose-of-performing-cross-validation)
+
+[7] [Cross-validation (statistics) - Wikipedia](https://en.wikipedia.org/wiki/Cross-validation_(statistics))
+
